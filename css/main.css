@@ -1,0 +1,72 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+/*Importamos una fuente*/
+@font-face {
+  font-family: "amatic";
+  src: url('../fonts/amatic.woff2');
+}
+/*Usamos la fuente*/
+#logo {
+    font-family: 'amatic', cursive;
+    font-size: 27px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.navSize{
+    min-height: 50px;
+}
+
+/*   Menú   */
+.nav-item:hover {   
+    animation-name: prueba;
+    animation-duration: .5s;
+    animation-iteration-count: unset;
+    animation-timing-function: ease-in;
+}
+@keyframes prueba{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+.info-section img{
+    max-width: 100%;
+}
+.topSpace{   
+    padding-top: 4rem!important;
+}
+
+.formulario {
+    /* background-color: #c0392b; */
+    background-color: rgba(192 ,57,43 ,.7);
+}
+
+.home-inner {
+    padding-top: 200px;
+}
+
+#home-section {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.dark-over {
+background-color: rgba(0, 0, 0, .8);
+margin: 0;
+padding: 0;
+width: 100%;
+min-height: 100%;
+}
